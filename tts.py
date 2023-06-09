@@ -2,7 +2,7 @@ from gtts import gTTS
 
 
 def gtts_test(text: str) -> None:
-    tts = gTTS(text)
+    tts = gTTS(text, lang="ko")
     tts.save(f"{text}.mp3")
 
 
